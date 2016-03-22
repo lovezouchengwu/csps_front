@@ -1,0 +1,11 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/view/common/header.jsp" %>
+
+<body>
+标题：${msgInfomation.title }<br/>
+发布时间：<fmt:formatDate value="${msgInfomation.releaseTime }" pattern="yyyy-MM-dd"/><br/>
+发布人：${msgInfomation.username }<br/>
+信息来源：${msgInfomation.source }<br/>
+信息摘要：${msgInfomation.summary }
+</body>
+</html>

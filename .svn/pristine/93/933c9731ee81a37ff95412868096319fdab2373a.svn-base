@@ -1,0 +1,20 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+
+<span>第${pager.currentPage }/${pager.pageCount}页</span>
+<c:choose>
+	<c:when test="${pager.currentPage > 1 }">
+	<a id="pager_first" href="">首页</a>
+	<a id="pager_pre" href="">上一页</a>
+	</c:when>
+	<c:otherwise>首页  上一页</c:otherwise>
+</c:choose>
+<c:choose>
+	<c:when test="${pager.currentPage < pager.pageCount }">
+	<a id="pager_next" href="">下一页</a>
+	<a id="pager_last" href="">末页</a>
+	</c:when>
+	<c:otherwise>下一页 末页</c:otherwise>
+</c:choose>
+
+<script>
+</script>

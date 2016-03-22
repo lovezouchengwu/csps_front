@@ -1,0 +1,38 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<html>
+<head>
+    <title>南昌城市配送平台</title>
+    <script src="/js/jquery-1.12.1.min.js"></script>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="loginForm">
+        <form id="theFrom" action="/user/insert" method="post">
+            <div class="form-item">
+                <h6>物流团购管理后台</h6>
+            </div>
+            <div class="form-item">
+                <span class="field-title">name:</span>
+                <input type="text" name="name" value="" class="field-input" />
+            </div>
+            <div class="form-item">
+                <span class="field-title">gender:</span>
+                <input type="text" name="gender" value="" class="field-input" />
+            </div>
+            <div class="form-item">
+                <span class="field-title">salary:</span>
+                <input type="text" name="salary" value="" class="field-input" />
+            </div>
+            <div class="form-item">
+                <span class="field-title">email:</span>
+                <input type="text" name="email" value="" class="field-input" />
+            </div>
+            <div class="form-item">
+                <input type="submit" value="登录" style="height: 100px;;" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
